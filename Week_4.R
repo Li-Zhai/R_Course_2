@@ -33,9 +33,10 @@ hilbert = function(n) {
 x = hilbert(1000)
 system.time(svd(x))
 
-
-
-
+# Assignment 4
+outcome = read.csv("outcome-of-care-measures.csv", colClasses = "character")
+outcome[, 11] <- as.numeric(outcome[, 11])
+hist(outcome[, 11])
 
 
 
